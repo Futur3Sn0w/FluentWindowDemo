@@ -1,0 +1,94 @@
+body{
+	background-color: Grey;
+	font-family: Segoe UI;
+}
+
+.mainwindow{
+	background-color: #F6F6F6;
+	width: 90%;
+	height: 90%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	box-shadow: 0 30px 40px 0 rgba(0,0,0,0.3);
+}
+
+.titlebar{
+	width: 100%;
+	height: 50px;
+	white-space: nowrap;
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+}
+
+.titlebartext{
+	width: 170px;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.winbuttons{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	transform: translate(0, -100%);
+}
+
+.windowbutton{
+	width: 60px;
+	height: 50px;
+	background-color: transparent;
+}
+
+.windowbutton p{
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	color: black;
+	font-family: FluentSystemIcons-Regular;
+}
+
+.close{
+	border-radius: 0 5px 0 0;
+	transition-duration: 200ms;
+}
+
+.max, .min{
+	transition-duration: 200ms;
+}
+
+.max:hover, .min:hover{
+	background-color: #EFEFEF;
+}
+
+.close:hover{
+	background-color: #DC143C;
+}
+
+
+.img1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 200px;
+	border-radius: 6px;
+	border: 0px solid transparent;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	transition-duration: .3s;
+	transition-delay: .1s;
+	transition-timing-function: ease;
+}
+
+.img1:hover{
+	width: 220px;
+	height: 220px;
+	border: 5px solid skyBlue;
+	box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
+}
